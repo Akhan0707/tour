@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | WanderLux Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <h1>WanderLux Travel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                <li><a href="calculator.html"><i class="fas fa-calculator"></i> Trip Calculator</a></li>
+                <li><a href="appointment.html" class="active"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Request a Travel Consultation</h1>
+        
+        <div class="appointment-container">
+            <div class="appointment-info">
+                <h2><i class="fas fa-concierge-bell"></i> Personalized Service</h2>
+                <p>Our travel experts will contact you within 24 hours to discuss your dream vacation.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Free initial consultation</li>
+                    <li><i class="fas fa-check-circle"></i> Custom itinerary design</li>
+                    <li><i class="fas fa-check-circle"></i> Best price guarantee</li>
+                </ul>
+            </div>
+            
+            <div class="appointment-form">
+                <h2>Appointment Form</h2>
+                <form id="appointmentForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+61 412 345 678">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date"><i class="fas fa-calendar-alt"></i> Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your travel plans..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Submit Request
+                    </button>
+                </form>
+                <p id="formMessage"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WanderLux Travel | ICT502 Assessment</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

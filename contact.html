@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WanderLux Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <h1>WanderLux Travel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="destinations.html"><i class="fas fa-map-marked-alt"></i> Destinations</a></li>
+                <li><a href="calculator.html"><i class="fas fa-calculator"></i> Trip Calculator</a></li>
+                <li><a href="appointment.html"><i class="fas fa-calendar-check"></i> Book Now</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Contact WanderLux Travel</h1>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2><i class="fas fa-map-marker-alt"></i> Our Office</h2>
+                <p><strong>Address:</strong><br>123 Travel Street<br>Melbourne VIC 3000<br>Australia</p>
+                
+                <p><strong><i class="fas fa-phone"></i> Phone:</strong><br>+61 3 1234 5678</p>
+                
+                <p><strong><i class="fas fa-envelope"></i> Email:</strong><br>info@wanderluxtravel.com</p>
+                
+                <p><strong><i class="fas fa-clock"></i> Business Hours:</strong><br>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</p>
+                
+                <div class="social-contact">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="contactName">Name:</label>
+                        <input type="text" id="contactName" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail">Email:</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactSubject">Subject:</label>
+                        <input type="text" id="contactSubject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage">Message:</label>
+                        <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <div id="contactMessageStatus"></div>
+            </div>
+        </div>
+        
+        <div class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+                <p><i class="fas fa-map"></i> Map would be embedded here</p>
+                <p>123 Travel Street, Melbourne VIC 3000</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WanderLux Travel | ICT502 Assessment</p>
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
